@@ -14,6 +14,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalLogic.Test.Refactorin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalLogic.Test.Refactoring.OldCodeClasses", "Sources\OldCodeClasses\GlobalLogic.Test.Refactoring.OldCodeClasses.csproj", "{DC800BCD-C8CD-44C8-9DFE-2D3479378E21}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalLogic.Test.Refactoring.Models", "Sources\Models\GlobalLogic.Test.Refactoring.Models.csproj", "{5259E0EC-88A3-4A91-85D5-2C991878AD24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{DC800BCD-C8CD-44C8-9DFE-2D3479378E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC800BCD-C8CD-44C8-9DFE-2D3479378E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC800BCD-C8CD-44C8-9DFE-2D3479378E21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5259E0EC-88A3-4A91-85D5-2C991878AD24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5259E0EC-88A3-4A91-85D5-2C991878AD24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5259E0EC-88A3-4A91-85D5-2C991878AD24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5259E0EC-88A3-4A91-85D5-2C991878AD24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

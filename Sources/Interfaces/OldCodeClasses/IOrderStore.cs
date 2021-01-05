@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace GlobalLogic.Test.Refactoring.OldCodeClasses.Interfaces
+namespace GlobalLogic.Test.Refactoring.Interfaces.OldCodeClasses
 {
     public interface IOrderStore
     {
