@@ -3,12 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalLogic.Test.Refactoring", "Sources\GlobalLogic.Test.Refactoring\GlobalLogic.Test.Refactoring.csproj", "{C44EC3CE-5F86-47DF-AF34-BE09C0618912}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{745B2074-6B1A-41F4-B55F-89236F6AB37F}"
 	ProjectSection(SolutionItems) = preProject
 		Documentation\before-refactoring.cs = Documentation\before-refactoring.cs
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalLogic.Test.Refactoring", "Sources\Base\GlobalLogic.Test.Refactoring.csproj", "{EA36C767-83EE-4354-A854-CF8711DF924E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalLogic.Test.Refactoring.Interfaces", "Sources\Interfaces\GlobalLogic.Test.Refactoring.Interfaces.csproj", "{C8893142-C83B-44AE-90BD-F721FEA62F3B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalLogic.Test.Refactoring.OldCodeClasses", "Sources\OldCodeClasses\GlobalLogic.Test.Refactoring.OldCodeClasses.csproj", "{DC800BCD-C8CD-44C8-9DFE-2D3479378E21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,10 +20,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C44EC3CE-5F86-47DF-AF34-BE09C0618912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C44EC3CE-5F86-47DF-AF34-BE09C0618912}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C44EC3CE-5F86-47DF-AF34-BE09C0618912}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C44EC3CE-5F86-47DF-AF34-BE09C0618912}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA36C767-83EE-4354-A854-CF8711DF924E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA36C767-83EE-4354-A854-CF8711DF924E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA36C767-83EE-4354-A854-CF8711DF924E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA36C767-83EE-4354-A854-CF8711DF924E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8893142-C83B-44AE-90BD-F721FEA62F3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8893142-C83B-44AE-90BD-F721FEA62F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8893142-C83B-44AE-90BD-F721FEA62F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8893142-C83B-44AE-90BD-F721FEA62F3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC800BCD-C8CD-44C8-9DFE-2D3479378E21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC800BCD-C8CD-44C8-9DFE-2D3479378E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC800BCD-C8CD-44C8-9DFE-2D3479378E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC800BCD-C8CD-44C8-9DFE-2D3479378E21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
