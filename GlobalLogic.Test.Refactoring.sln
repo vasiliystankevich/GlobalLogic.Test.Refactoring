@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalLogic.Test.Refactoring", "Sources\GlobalLogic.Test.Refactoring\GlobalLogic.Test.Refactoring.csproj", "{C44EC3CE-5F86-47DF-AF34-BE09C0618912}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{745B2074-6B1A-41F4-B55F-89236F6AB37F}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\before-refactoring.cs = Documentation\before-refactoring.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
