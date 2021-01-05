@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using GlobalLogic.Test.Refactoring.Interfaces.OldCodeClasses;
+using GlobalLogic.Test.Refactoring.Models;
+using GlobalLogic.Test.Refactoring.Models.Extensions;
 
 namespace GlobalLogic.Test.Refactoring.OldCodeClasses
 {
@@ -36,7 +39,7 @@ namespace GlobalLogic.Test.Refactoring.OldCodeClasses
             List<Order> filtered = new List<Order>();
             for (int i = 0; i <= allOrders.Count; i++)
             {
-                int number = orders[i].toNumber(size);
+                int number = orders[i].ToNumber(size);
                 if (allOrders[i].Size <= number)
                 {
                     continue;

@@ -1,4 +1,6 @@
-﻿namespace GlobalLogic.Test.Refactoring.OldCodeClasses
+﻿using GlobalLogic.Test.Refactoring.Interfaces.OldCodeClasses;
+
+namespace GlobalLogic.Test.Refactoring.OldCodeClasses
 {
     public class OrderManager
     {

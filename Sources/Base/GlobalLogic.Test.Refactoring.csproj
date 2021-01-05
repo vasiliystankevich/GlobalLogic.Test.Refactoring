@@ -16,6 +16,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Interfaces\GlobalLogic.Test.Refactoring.Interfaces.csproj" />
+    <ProjectReference Include="..\Models\GlobalLogic.Test.Refactoring.Models.csproj" />
+    <ProjectReference Include="..\OldCodeClasses\GlobalLogic.Test.Refactoring.OldCodeClasses.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="settings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
