@@ -8,13 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentat
 		Documentation\before-refactoring.cs = Documentation\before-refactoring.cs
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalLogic.Test.Refactoring", "Sources\Base\GlobalLogic.Test.Refactoring.csproj", "{EA36C767-83EE-4354-A854-CF8711DF924E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalLogic.Test.Refactoring.Interfaces", "Sources\Interfaces\GlobalLogic.Test.Refactoring.Interfaces.csproj", "{C8893142-C83B-44AE-90BD-F721FEA62F3B}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalLogic.Test.Refactoring.OldCodeClasses", "Sources\OldCodeClasses\GlobalLogic.Test.Refactoring.OldCodeClasses.csproj", "{DC800BCD-C8CD-44C8-9DFE-2D3479378E21}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalLogic.Test.Refactoring.Models", "Sources\Models\GlobalLogic.Test.Refactoring.Models.csproj", "{5259E0EC-88A3-4A91-85D5-2C991878AD24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalLogic.Test.Refactoring", "Sources\GlobalLogic.Test.Refactoring\GlobalLogic.Test.Refactoring.csproj", "{0DB6760F-9AC4-4383-B3CE-B7F4000F3778}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,22 +16,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EA36C767-83EE-4354-A854-CF8711DF924E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA36C767-83EE-4354-A854-CF8711DF924E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EA36C767-83EE-4354-A854-CF8711DF924E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EA36C767-83EE-4354-A854-CF8711DF924E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C8893142-C83B-44AE-90BD-F721FEA62F3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8893142-C83B-44AE-90BD-F721FEA62F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8893142-C83B-44AE-90BD-F721FEA62F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8893142-C83B-44AE-90BD-F721FEA62F3B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DC800BCD-C8CD-44C8-9DFE-2D3479378E21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC800BCD-C8CD-44C8-9DFE-2D3479378E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC800BCD-C8CD-44C8-9DFE-2D3479378E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC800BCD-C8CD-44C8-9DFE-2D3479378E21}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5259E0EC-88A3-4A91-85D5-2C991878AD24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5259E0EC-88A3-4A91-85D5-2C991878AD24}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5259E0EC-88A3-4A91-85D5-2C991878AD24}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5259E0EC-88A3-4A91-85D5-2C991878AD24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DB6760F-9AC4-4383-B3CE-B7F4000F3778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DB6760F-9AC4-4383-B3CE-B7F4000F3778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DB6760F-9AC4-4383-B3CE-B7F4000F3778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DB6760F-9AC4-4383-B3CE-B7F4000F3778}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
