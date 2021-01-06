@@ -6,8 +6,6 @@ using GlobalLogic.Test.Refactoring.Models;
 
 namespace GlobalLogic.Test.Refactoring.OldCodeClasses
 {
-
-
     public class OrderFilter : IOrderFilter
     {
         public ObservableCollection<Order> WriteOutFilterdAndPriceSortedOrders(List<Order> orders, int size)
