@@ -1,7 +1,9 @@
-﻿using GlobalLogic.Test.Refactoring.Interfaces;
-using Project.Kernel;
+﻿using Project.Kernel;
+using Project.Kernel.Interfaces;
+using Project.Kernel.Interfaces.Unity;
+using Project.Kernel.Unity;
 using Unity;
-using Unity.Lifetime;
+using Unity.Interception.Utilities;
 
 namespace GlobalLogic.Test.Refactoring
 {
@@ -9,10 +11,13 @@ namespace GlobalLogic.Test.Refactoring
     {
         public override void RegisterTypes(IUnityContainer container)
         {
-            container.RegisterFactory<Settings>(unityContainer => Settings.Load("settings.json"),
-                new SingletonLifetimeManager());
-            container.RegisterType<ILogic, Logic>();
-            container.RegisterType<IStartup, Startup>();
+            container.RegisterType<IUnityContainerExecutor, UnityContainerExecutor>();
+            container.RegisterType<IUnityContainerFunctors, UnityContainerFunctors>();
+
+            container.RegisterType<IRegistratorTypes, RegistratorTypes>("GlobalLogic.Test.Refactoring");
+
+            var registrators = container.ResolveAll<IRegistratorTypes>();
+            registrators.ForEach(registrator => registrator.RegisterAll());
         }
     }
 }

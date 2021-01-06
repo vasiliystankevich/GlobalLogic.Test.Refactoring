@@ -1,23 +1,31 @@
 ﻿using GlobalLogic.Test.Refactoring.Interfaces;
-using System;
+using GlobalLogic.Test.Refactoring.Interfaces.OldCodeClasses;
+using GlobalLogic.Test.Refactoring.Models;
 
 namespace GlobalLogic.Test.Refactoring
 {
     public class Startup : IStartup
     {
-        public Startup(Settings settings, ILogic logic)
+        public Startup(Settings settings, IOrderStore orderStore, IOrderFilter orderFilter, IOrderWriter orderWriter)
         {
             Settings = settings;
-            Logic = logic;
+            OrderStore = orderStore;
+            OrderFilter = orderFilter;
+            OrderWriter = orderWriter;
         }
 
         public void Execute(string[] args)
         {
-            Console.WriteLine("Press any key for exit....");
-            Console.ReadKey(true);
+            var orders = OrderStore.GetOrders();
+            var largeResult =  OrderFilter.WriteOutFilterdAndPriceSortedOrders(orders, Settings.SizesOrderLists.Large);
+            var smallResult = OrderFilter.WriteOutFilterdAndPriceSortedOrders(orders, Settings.SizesOrderLists.Small);
+            OrderWriter.WriteOrders(largeResult);
+            OrderWriter.WriteOrders(smallResult);
         }
 
         Settings Settings { get; }
-        ILogic Logic { get; }
+        IOrderStore OrderStore { get; }
+        IOrderFilter OrderFilter { get; }
+        IOrderWriter OrderWriter { get; }
     }
 }
