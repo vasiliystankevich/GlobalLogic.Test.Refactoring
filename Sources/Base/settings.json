@@ -1,2 +1,6 @@
 ﻿{
+  "SizesOrderLists": {
+    "Large": 100,
+    "Small": 10 
+  } 
 }
