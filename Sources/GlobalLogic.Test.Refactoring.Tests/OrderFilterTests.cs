@@ -18,6 +18,7 @@ namespace GlobalLogic.Test.Refactoring.Tests
     {
         [Theory]
         [MoqInlineAutoData(10, 100, 30)]
+        [MoqInlineAutoData(100, 100, 30)]
         public void WriteOutFilterdAndPriceSortedOrders_Call_Execute(int size, int count, int countSkipped, [Frozen]Mock<IObservableCollectionFactory> observableCollectionFactory, Random random, OrderFilter sut)
         {
             //arrange
