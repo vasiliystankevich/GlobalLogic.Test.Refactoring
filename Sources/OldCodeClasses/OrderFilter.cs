@@ -11,20 +11,13 @@ namespace GlobalLogic.Test.Refactoring.OldCodeClasses
 
     public class OrderFilter : IOrderFilter
     {
-        public OrderFilter(IOrderWriter orderWriter)
+        public ObservableCollection<Order> WriteOutFilterdAndPriceSortedOrders(List<Order> orders, int size)
         {
-            OrderWriter = orderWriter;
-        }
-
-        public void WriteOutFilterdAndPriceSortedOrders(List<Order> orders, int size)
-        {
-            var observableCollection = new ObservableCollection<Order>();
+            var result = new ObservableCollection<Order>();
             var queryFilteredOrders = orders.Where(order => order.Size > size).ToList();
             var filteredOrders = queryFilteredOrders.Any() ? queryFilteredOrders : Enumerable.Empty<Order>().ToList();
-            filteredOrders.OrderBy(o => o.Price).ForEach(observableCollection.Add);
-            OrderWriter.WriteOrders(observableCollection);
+            filteredOrders.OrderBy(o => o.Price).ForEach(result.Add);
+            return result;
         }
-
-        IOrderWriter OrderWriter { get; }
     }
 }
