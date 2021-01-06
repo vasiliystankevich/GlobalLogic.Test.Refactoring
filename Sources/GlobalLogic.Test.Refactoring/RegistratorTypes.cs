@@ -21,6 +21,7 @@ namespace GlobalLogic.Test.Refactoring
                         var loader = executor.Resolve<ISettingsLoader>();
                         return loader.Load("settings.json");
                     })
+                    .RegisterSingletonFactory<IObservableCollectionFactory>(executor => new ObservableCollectionFactory())
                     .RegisterType<IOrderStore, OrderStore>()
                     .RegisterType<IOrderWriter, OrderWriter>()
                     .RegisterType<IOrderFilter, OrderFilter>()

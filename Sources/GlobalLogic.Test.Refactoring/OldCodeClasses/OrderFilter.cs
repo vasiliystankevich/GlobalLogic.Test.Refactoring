@@ -6,13 +6,16 @@ using GlobalLogic.Test.Refactoring.Models;
 
 namespace GlobalLogic.Test.Refactoring.OldCodeClasses
 {
-
-
     public class OrderFilter : IOrderFilter
     {
+        public OrderFilter(IObservableCollectionFactory observableCollectionFactory)
+        {
+            ObservableCollectionFactory = observableCollectionFactory;
+        }
+
         public ObservableCollection<Order> WriteOutFilterdAndPriceSortedOrders(List<Order> orders, int size)
         {
-            var result = new ObservableCollection<Order>();
+            var result = ObservableCollectionFactory.GetCollection<Order>();
             var queryFilteredOrders = orders.Where(order => order.Size > size).OrderBy(o => o.Price).AsQueryable();
             var filteredOrders = ToShowQuery(queryFilteredOrders);
             filteredOrders.ForEach(result.Add);
@@ -20,5 +23,6 @@ namespace GlobalLogic.Test.Refactoring.OldCodeClasses
         }
 
         List<Order> ToShowQuery(IQueryable<Order> query) => (query.Any() ? query : Enumerable.Empty<Order>()).ToList();
+        IObservableCollectionFactory ObservableCollectionFactory { get; }
     }
 }
